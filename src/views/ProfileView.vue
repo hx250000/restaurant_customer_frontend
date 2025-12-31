@@ -190,7 +190,7 @@ export default {
       }
 
       request
-        .post("/api/users/reset", {
+        .put("/api/users/reset", {
           userName: this.username,
           newPassword,
         })

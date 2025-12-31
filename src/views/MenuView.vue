@@ -192,6 +192,7 @@ export default {
                     this.cartVisible = false;
                     this.confirmVisible = false;
                     this.remark = "";
+                    this.selectCategory(this.currentCategory);
                 })
                 .catch(err=>{
                     this.$message.error(err);
