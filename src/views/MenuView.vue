@@ -4,7 +4,7 @@
         <el-header class="header">
             <span>🍽️ 餐厅点餐系统</span>
             <span style="float:right">
-                当前用户：{{ username }}
+                <a v-on:click="toProfile" style="cursor: pointer"> 当前用户：{{ username }}</a>
             </span>
         </el-header>
 
@@ -196,6 +196,10 @@ export default {
                 .catch(err=>{
                     this.$message.error(err);
                 });
+        },
+        toProfile(){
+            this.$router.push("/profile");
+            console.log("跳转到profile");
         }
     }
 };
