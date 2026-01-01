@@ -214,7 +214,7 @@ export default {
       localStorage.removeItem("userId");
       localStorage.removeItem("username");
 
-      this.$router.push("/login");
+      this.$router.push('/login');
       this.$message.success("已退出登录");
     },
   },
@@ -230,15 +230,15 @@ export default {
 <style>
 .header {
   font-size: 40px;
-  background-color: rgb(229, 237, 251);
+  background-color: rgb(255, 210, 64);
 }
 
 .sidemenu {
-  background-color: rgb(229, 237, 251);
+  background-color: rgb(245, 247, 251);
 }
 
 .layout-container {
-  height: 100vh;
+  height: 98vh;
 }
 
 .profile-card {

@@ -89,7 +89,7 @@ export default {
                         localStorage.setItem("username",this.loginForm.username);
                         localStorage.setItem("userId", res.data.data.userid);
                         this.$message.success("登录成功");
-                        this.$router.push("/menu");
+                        this.$router.push('/menu');
                     } else {
                         this.$message.error(res.data.message || "登录失败");
                     }
@@ -128,8 +128,8 @@ export default {
 
 <style scoped>
 .login-container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 98vh;
     background: linear-gradient(135deg, #f7f4efe7, #f5f4f2);
     display: flex;
     justify-content: center;

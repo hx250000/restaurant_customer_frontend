@@ -2,7 +2,7 @@
     <el-container class="layout-container">
         <!-- 顶部 -->
         <el-header class="header">
-            <span>🍽️ 餐厅点餐系统</span>
+            <span>  餐厅点餐系统</span>
             <span style="float:right">
                 <a v-on:click="toProfile" style="cursor: pointer"> 当前用户：{{ username }}</a>
             </span>
@@ -199,7 +199,7 @@ export default {
                 });
         },
         toProfile(){
-            this.$router.push("/profile");
+            this.$router.push('/profile');
             console.log("跳转到profile");
         }
     }
@@ -217,7 +217,7 @@ body,
 
 /* 整体布局撑满 */
 .layout-container {
-    height: 100vh;
+    height: 98.21vh;
     overflow: hidden;
 }
 
@@ -225,9 +225,9 @@ body,
 .header {
     height: 60px;
     line-height: 60px;
-    background: #409eff;
-    color: #fff;
-    font-size: 18px;
+    background: rgb(255, 210, 64);
+    color: #000;
+    font-size: 20px;
     padding: 0 20px;
 }
 
@@ -250,7 +250,10 @@ body,
 
 /* 底部固定栏 */
 .footer {
-    height: 40px;
+    /* height: 20px; */
+    height: 40px;          /* ⭐ 关键 */
+    padding: 0 20px;       /* 减小 padding */
+    padding-bottom: 0;
     border-top: 1px solid #ebeef5;
     background: #fff;
     display: flex;
