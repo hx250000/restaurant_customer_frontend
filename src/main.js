@@ -9,7 +9,7 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
-axios.defaults.baseURL = 'http://localhost:8900';
+axios.defaults.baseURL = 'http://localhost';
 
 // 添加请求拦截器
 axios.interceptors.request.use(
