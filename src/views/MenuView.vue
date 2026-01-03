@@ -24,7 +24,8 @@
                 <el-row :gutter="20">
                     <el-col :span="6" v-for="dish in dishList" :key="dish.id">
                         <el-card class="dish-card">
-                            <h4>{{ dish.dishname }}</h4>
+                            <h4>{{ dish.dishname }}                            <span v-if="dish.spicy">🌶️</span>
+</h4>
                             <p>￥{{ dish.price }}</p>
                             <p>库存：{{ dish.stock }}</p>
                             <el-button type="primary" size="mini" :disabled="dish.stock <= 0" @click="addToCart(dish)">
